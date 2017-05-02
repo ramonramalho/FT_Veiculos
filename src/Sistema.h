@@ -3,7 +3,7 @@
    Limeira - SP
    Prof. Dr. Andre F. de Angelis
    Maio/2015
-*/
+ */
 
 #ifndef SISTEMA_H
 
@@ -14,39 +14,44 @@
 
 #include "ItemVenda.h"
 #include "Concessionaria.h"
+#include "ConcessionariaModerna.h"
 
 using namespace std;
 
-class Sistema
-   {
-   private:
-      vector<ItemVenda *> carros;
-      vector<ItemVenda *> motores;
-      vector<ItemVenda *> cambios;
-      vector<ItemVenda *> cores;
+class Sistema {
+private:
+    vector<ItemVenda *> carros;
+    vector<ItemVenda *> motores;
+    vector<ItemVenda *> cambios;
+    vector<ItemVenda *> cores;
+    vector<ItemVenda *> direcao;
+    vector<ItemVenda *> roda;
+    vector<ItemVenda *> sonorizacao;
 
-      vector<ItemVenda *> orcamento;
-      
-      Concessionaria * cliente;
-      
-      void boasVindas();
-      void carregarEstoque();
-      void iniciarVenda();
-      void imprimirOrcto();
-      void listarConfiguracao();
+    vector<ItemVenda *> orcamento;
 
-      ItemVenda * escolheAutomovel();
-      ItemVenda * escolheMotor();
-      ItemVenda * escolheCambio();
-      ItemVenda * escolheCor();
-      
-   public:
-      Sistema(Concessionaria *);
-      ~Sistema();
-      void processa();
-   };
-   
+    ConcessionariaModerna * cliente;
+
+    void boasVindas();
+    void carregarEstoque();
+    void iniciarVenda();
+    void imprimirOrcto();
+    void listarConfiguracao();
+
+    ItemVenda * escolheAutomovel();
+    ItemVenda * escolheMotor();
+    ItemVenda * escolheCambio();
+    ItemVenda * escolheCor();
+    ItemVenda * escolheDirecao();
+    ItemVenda * escolheRoda();
+    ItemVenda * escolheSom();
+public:
+    Sistema(ConcessionariaModerna *);
+    ~Sistema();
+    void processa();
+};
+
 #endif
-   
-   
+
+
 /* fim de arquivo */
