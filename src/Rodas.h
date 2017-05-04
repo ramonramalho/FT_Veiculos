@@ -5,21 +5,27 @@
    Maio/2015
 */
 
+#ifndef RODAS_H
+
+#define RODAS_H
+
 #include <string>
-#include "Roda.h"
 #include "ItemVenda.h"
 
 using namespace std;
 
-Roda::Roda(string aro,string marca, double valor) : ItemVenda(valor)
+class Rodas : public ItemVenda
    {
-   this->aro = aro;
-   this->marca = marca;
+   private:
+      string aro;
+      string marca;
+      
+      
+   public:
+      Rodas(string aro,string marca, double);
+      virtual string getDescricao();
    };
    
-string Roda::getDescricao()
-   { 
-   return ("Roda " +marca+ " Aro: " + aro +" Valor: "); 
-   };
+#endif
    
 /* fim de arquivo */

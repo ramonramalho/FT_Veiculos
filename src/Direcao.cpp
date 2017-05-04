@@ -14,5 +14,5 @@ Direcao::Direcao(string tipo, double valor) : ItemVenda(valor) {
 };
 
 string Direcao::getDescricao() {
-    return ("Direcao: " + tipo + " Valor: ");
+    return ("Direcao: " + tipo);
 };
