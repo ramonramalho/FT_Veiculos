@@ -19,7 +19,7 @@
 #include "Menu.h"
 #include "ConcessionariaModerna.h"
 #include "Direcao.h"
-#include "Roda.h"
+#include "Rodas.h"
 #include "Sonorizacao.h"
 
 using namespace std;
@@ -136,11 +136,11 @@ void Sistema::carregarEstoque() {
     direcao.insert(direcao.end(), new Direcao("Direcao Mecanica", 0.0));
 
     roda.clear();
-    roda.insert(roda.end(), new Roda("17x7,0", "Noova", 394.90));
-    roda.insert(roda.end(), new Roda("17x7,0", "Socorro", 423.90));
-    roda.insert(roda.end(), new Roda("18x6,0", "Volcano", 549.90));
-    roda.insert(roda.end(), new Roda("20x8,5", "Black rhino", 867.90));
-    roda.insert(roda.end(), new Roda("13x5,0", "Ferraro", 0.0));
+    roda.insert(roda.end(), new Rodas("17x7,0", "Noova", 394.90));
+    roda.insert(roda.end(), new Rodas("17x7,0", "Socorro", 423.90));
+    roda.insert(roda.end(), new Rodas("18x6,0", "Volcano", 549.90));
+    roda.insert(roda.end(), new Rodas("20x8,5", "Black rhino", 867.90));
+    roda.insert(roda.end(), new Rodas("13x5,0", "Ferraro", 0.0));
 
     sonorizacao.clear();
     sonorizacao.insert(sonorizacao.end(), new Sonorizacao("Som Automotivo", "Pionner", 279.90));
