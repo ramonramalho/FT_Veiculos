@@ -19,7 +19,7 @@ Rodas::Rodas(string aro,string marca, double valor) : ItemVenda(valor)
    
 string Rodas::getDescricao()
    { 
-   return ("Roda " +marca+ " Aro: " + aro +" Valor: "); 
+   return ("Roda " +marca+ " Aro: " + aro); 
    };
    
 /* fim de arquivo */
