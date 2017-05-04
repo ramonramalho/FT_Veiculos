@@ -9,10 +9,6 @@ Direcao::Direcao(string tipo, double valor) : ItemVenda(valor) {
     this->tipo = tipo;
 };
 
- string Direcao::getTipo() {
-    return (tipo);
-};
-
 string Direcao::getDescricao() {
     return ("Direcao: " + tipo);
 };
