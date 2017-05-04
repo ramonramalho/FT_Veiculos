@@ -13,8 +13,7 @@ private:
     string tipo;
 
 public:
-    Direcao(string tipo, double valor); 
-    virtual string getTipo();
+    Direcao(string tipo, double valor);
     virtual string getDescricao();
 };
 
