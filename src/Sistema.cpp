@@ -229,7 +229,7 @@ ItemVenda * Sistema::escolheDirecao() {
         opcoes.push_back((*varre)->getDescricao() + " por R$ " + to_string((*varre)->getValor()));
         varre++;
     };
-    Menu menu("Modelos disponiveis", opcoes);
+    Menu menu("Direcoes disponiveis", opcoes);
 
     return (direcao.at(menu.getEscolha()));
 };
@@ -242,7 +242,7 @@ ItemVenda * Sistema::escolheRoda() {
         opcoes.push_back((*varre)->getDescricao() + " por R$ " + to_string((*varre)->getValor()));
         varre++;
     };
-    Menu menu("Modelos disponiveis", opcoes);
+    Menu menu("Rodas disponiveis", opcoes);
 
     return (roda.at(menu.getEscolha()));
 };
@@ -294,7 +294,7 @@ ItemVenda * Sistema::escolheSom() {
         opcoes.push_back((*varre)->getDescricao() + " por R$ " + to_string((*varre)->getValor()));
         varre++;
     };
-    Menu menu("Cores disponiveis", opcoes);
+    Menu menu("Aparelhos disponiveis", opcoes);
 
     return (sonorizacao.at(menu.getEscolha()));
 };
