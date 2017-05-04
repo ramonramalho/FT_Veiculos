@@ -17,11 +17,11 @@ private:
 
 
 public:
-    ConcessionariaModerna(string site, string facebook, string teweeter, string whatsapp, string nome, string endereco
-            , string cidade, string estado, string telefone);
+    ConcessionariaModerna(
+      string site, string facebook, string teweeter, string whatsapp,
+      string nome, string endereco, string cidade, string estado, string telefone
+    );
 
-
-    virtual string getDescricao();
     const virtual string getSite();
     const virtual string getFacebook();
     const virtual string getTweeter();

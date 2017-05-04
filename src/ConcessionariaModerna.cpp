@@ -38,9 +38,6 @@ const string ConcessionariaModerna::getWhatsapp() {
     return (whatsapp);
 };
 
-string ConcessionariaModerna::getDescricao() {
-    return (site);
-};
 
 
 
